@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import "@scouterna/ui-react/dist/theme.css";
+
+@layer base {
+  html {
+    @apply font-sans text-gray-dark;
+  }
+}

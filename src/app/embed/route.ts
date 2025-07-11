@@ -52,7 +52,7 @@ export async function GET(request: Request) {
   const config = getConfig();
 
   const origin =
-    request.headers.get("Origin") ?? request.headers.get("Referrer");
+    request.headers.get("Origin") ?? request.headers.get("Referer");
   const originOrResponse = verifyOrigin(origin);
 
   if ("response" in originOrResponse) {

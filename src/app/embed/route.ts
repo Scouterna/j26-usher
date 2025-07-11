@@ -51,7 +51,8 @@ const verifyOrigin = (
 export async function GET(request: Request) {
   const config = getConfig();
 
-  const origin = request.headers.get("Origin");
+  const origin =
+    request.headers.get("Origin") ?? request.headers.get("Referrer");
   const originOrResponse = verifyOrigin(origin);
 
   if ("response" in originOrResponse) {

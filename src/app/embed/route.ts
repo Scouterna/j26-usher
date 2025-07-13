@@ -10,11 +10,11 @@ const verifyOrigin = (
   origin: string | null,
 ): { origin: string } | { response: Response } => {
   if (allowedOrigins.includes("*")) {
-    if (process.env.NODE_ENV !== "development") {
-      throw new Error(
-        "CORS wildcard is not allowed in production. Please specify IFRAME_ALLOWED_ORIGINS in your .env file.",
-      );
-    }
+    // if (process.env.NODE_ENV !== "development") {
+    //   throw new Error(
+    //     "CORS wildcard is not allowed in production. Please specify IFRAME_ALLOWED_ORIGINS in your .env file.",
+    //   );
+    // }
 
     return {
       origin: "*",

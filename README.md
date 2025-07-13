@@ -1,4 +1,4 @@
-# Usher - An application picket
+# Usher - An application picker
 
 ## Local development
 
